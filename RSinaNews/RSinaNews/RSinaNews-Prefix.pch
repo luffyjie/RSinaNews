@@ -1,0 +1,26 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import "Tool.h"
+#import "TSMessage.h"
+#import "APIClient.h"
+#import "DatabaseManager.h"
+
+#import "Config.h"
+#import "UIViewController+MMDrawerController.h"
+#import "URLConstant.h"
+#import "ImageConstant.h"
+#import "Constant.h"
+#endif
